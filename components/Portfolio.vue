@@ -94,4 +94,13 @@
     }
   }
 }
+@media screen and (max-width: 460px) {
+  .portfolio {
+    &__project {
+      width: 36rem;
+      background-size: cover;
+      background-position: left;
+    }
+  }
+}
 </style>

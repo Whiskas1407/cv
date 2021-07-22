@@ -1,5 +1,5 @@
 <template>
-  <section class="skills">
+  <section class="skills" id="skills">
     <div class="container">
       <div class="skills__content">
         <h2 class="skills__title">Мои навыки</h2>
@@ -126,6 +126,18 @@
       img {
         width: 3rem;
       }
+    }
+  }
+}
+@media screen and (max-width: 460px) {
+  .skills {
+    &__items {
+      display: grid;
+      grid-template-columns: 36rem;
+      grid-column-gap: 0;
+      grid-row-gap: 5rem;
+      padding-top: 5rem;
+      justify-items: center;
     }
   }
 }

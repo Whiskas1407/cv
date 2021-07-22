@@ -2,13 +2,16 @@
   <section id="app">
     <Header />
     <Nuxt />
+    <Footer />
   </section>
 </template>
 <script>
 import Header from './../components/Header'
+import Footer from './../components/Footer'
 export default {
   components: {
-    Header
+    Header,
+    Footer
   }
 }
 </script>
@@ -87,6 +90,15 @@ ul {
   &:hover {
     background: $brown;
     color: $white;
+  }
+}
+@media screen and (max-width: 460px) {
+  :root {
+    --fontSize: 2.778vw;
+  }
+  .container {
+    margin: 0;
+    width: 36rem;
   }
 }
 </style>
